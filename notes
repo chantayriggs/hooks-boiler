@@ -1,0 +1,19 @@
+CLIENT:
+npm run start
+
+
+BACKEND:
+nodemon server
+
+MONGODB STUFF
+set up server connection with : 
+    mongod 
+
+new terminal: set up database
+    mongo
+    use <db name, ex: boilers>
+
+Now you'll see connection established successfully with server.js
+
+Test endpoints with postman
+
