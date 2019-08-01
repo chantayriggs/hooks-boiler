@@ -26,10 +26,8 @@ const Update = props => {
         }
         axios.post(`http://localhost:4000/boilers/update/${boiler._id}`, updatedBoiler)
           .then(response => console.log(response.data))
-    
-        resetString();
-        resetBoolean();
-        resetNumber();
+
+        setUpdateClickedStatus(false)
     }
 
     return (
