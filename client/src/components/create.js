@@ -7,10 +7,10 @@ const Create = () => {
     const { value:boolean, bind:bindBoolean, reset:resetBoolean } = useInput('');
     const { value:number, bind:bindNumber, reset:resetNumber } = useInput('');
 
-    const handleSubmit = (event) => {
+    const handleSubmit = event => {
         event.preventDefault();
         let newBoiler = {
-          "boiler_string": `${string}`,
+          "boiler_string": string,
           "boiler_boolean": boolean,
           "boiler_number": number
         }

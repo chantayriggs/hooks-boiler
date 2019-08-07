@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from "axios"
 import RenderBoilers from './RenderBoilers';
+import Create from "./create"
+
 
 
 
 const Read = () => {
+
 
     const [boilers, setBoilers] = useState('')
     const url = "http://localhost:4000/boilers/read"
@@ -23,6 +26,7 @@ const Read = () => {
     return (
         <div>
             <RenderBoilers boilers={boilers} />
+            <Create />
         </div>
     )
 }

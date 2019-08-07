@@ -1,9 +1,15 @@
 CLIENT:
 npm run start
+npm i axios
+
+(Create-react-app creates a git repo, delete with ls -a, rm -fr .git)
 
 
 BACKEND:
+npm init -y
+nom i express body-parser corn mongoose
 nodemon server
+Create .gitignore, put in node_modules
 
 MONGODB STUFF
 set up server connection with : 
