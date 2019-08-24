@@ -1,19 +1,13 @@
 import React from 'react';
-import {useRoutes} from "hookrouter"
-import Home from "./components/home"
-import Create from "./components/create"
-import Read from "./components/read"
-import Update from "./components/update"
-import Delete from "./components/delete"
+import Home from "./home"
 
-const routes = {
-  "/": () =>  <Read />,
-  "/create": () => <Create />
-}
-
-
-const App = () => {
-  return useRoutes(routes)
+const  App = () => {
+  return (
+    <div>
+      VELCOME TO MY HOOKS BOILER
+      <Home />
+    </div>
+  );
 }
 
 export default App;
