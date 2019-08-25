@@ -10,7 +10,7 @@ import "./styles.css"
 const Home = () => {
 
     const [allBoilers, setAllBoilers] = useState(null)
-    const [needUpdate, setNeedUpdate] = useState(false)
+    const [needUpdate, setNeedUpdate] = useState(true)
 
     const update = () => {
         setNeedUpdate(!needUpdate)
@@ -26,11 +26,8 @@ const Home = () => {
     return (
         <div>
             { allBoilers === null ? 
-            
                 <div>loading...</div> 
-                
                 : 
-                
                 <div className="home-wrapper" >
                     <Create update={update} />
                     <div className="card-wrapper" >
@@ -44,11 +41,8 @@ const Home = () => {
                             </div>
                         ))}
                     </div>
-
                 </div>
-            
             }
-
         </div>
     );
 };
