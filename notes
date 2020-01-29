@@ -1,4 +1,5 @@
 CLIENT:
+
 npm run start
 npm i axios
 
@@ -7,7 +8,7 @@ npm i axios
 
 BACKEND:
 npm init -y
-nom i express body-parser corn mongoose
+npm i express body-parser cors mongoose
 nodemon server
 Create .gitignore, put in node_modules
 
